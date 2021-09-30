@@ -2,13 +2,13 @@
   <v-footer color="white" class="py-6 py-sm-8 py-md-10 py-lg-12" elevation="6" padless>
     <v-container class="footer">
       <div class="company">
-        <div style="width: 200px; box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%); border-radius: 4px; overflow: hidden;">
+        <div style="width: 200px; box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%); border-radius: 4px; overflow: hidden;">
           <img src="../assets/logo_text.png" alt="TridsValidation">
         </div>   
         <div class="mt-3 mb-4 para">Empowering organizations to succeed</div>
         <div class="socials mt-4">
           <span class="para font-weight-bold black--text">Follow Us : </span>  
-          <v-btn icon small v-for="(social, s) in socials" :key="s" color="secondary" target="_blank" :href="social.to">
+          <v-btn icon small v-for="(social, s) in socials" :key="s" color="primary" target="_blank" :href="social.to">
             <v-icon size="14">{{ social.icon }}</v-icon>
           </v-btn>  
         </div>
@@ -41,7 +41,12 @@ export default {
     info: ['Home', 'About', 'Courses', 'Blog'],
     links: ['Student', 'Business', 'Instructor'],
     services: ['Design', 'Study', 'Business', 'UI/UX'],
-    contact: ['24th street, downtown, New York', 'info@e-learn.com', '(545) 555-0214'],
+    contact: [
+      'TriDS Validation- California Office, 5132 Dartmoor Circle, Fairfield, CA 94534', 
+      'suhasini@tridsvalidation.com', 
+      'preeti@tridsvalidation.com',
+      '+1 (415) 634-0137'
+    ],
     socials: [
       { icon: 'mdi-facebook', to: 'https://www.facebook.com' },
       { icon: 'mdi-twitter', to: 'https://www.twitter.com' },
@@ -58,28 +63,12 @@ export default {
   grid-template-columns: 280px calc(100% - 330px);
   grid-gap: 50px;  
 }
-.send__btn {
-  border-radius: 6px !important;
-  position: absolute;
-  right: 6px; 
-  top: 6px; 
-}
-input {
-  outline: none;
-  border: none;
-  background-color: rgba(128, 128, 128, 0.11);
-  border-radius: 6px;
-  padding: 12px;
-  font-size: 12px;
-  width: 100%;
-  letter-spacing: .5px;
-}
 .footer__links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));  
 }
 .para {
-  color: #00063ab7;
+  color: #0e1f58;
   font-size: 13px; 
   font-weight: 400 !important;
 }

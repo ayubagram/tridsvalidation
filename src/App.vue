@@ -49,6 +49,10 @@ img {
   width: 100%;
   object-fit: cover;
 }
+p {
+  font-size: 13px;
+  margin-bottom: 0 !important;
+}
 /* Button */
 .v-btn {
   text-transform: capitalize !important;
@@ -58,9 +62,9 @@ img {
 /* Input Fields */
 .v-text-field fieldset, .v-text-field .v-input__control, .v-text-field .v-input__slot { border-radius: 0 !important; }
 .v-text-field input, .v-input .v-label {
-  font-size: 13px !important;
+  font-size: 14px !important;
   color: rgb(0 0 0 / 80%) !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   letter-spacing: 1px !important;
 }
 .v-input input { font-size: 12px !important; }
@@ -68,10 +72,14 @@ img {
   line-height: 1 !important;
   font-size: small !important;
 }
-.v-text-field--outlined.v-input--is-focused fieldset { border: 1px solid #00063a !important; }
+.v-text-field--outlined.v-input--is-focused fieldset { border: 1px solid #0e1f58 !important; }
 .v-text-field--outlined.v-input--has-state fieldset { border: 1px solid #ff2059 !important; }
 .v-input .v-icon.v-icon { font-size: 18px !important; }
 .v-text-field--outlined.v-input--dense .v-label { top: 14px !important; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
+
 /* Courses */
 .courses, .reviews {
   display: grid;
