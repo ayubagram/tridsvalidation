@@ -11,7 +11,7 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-    <div class="py-8 py-sm-10 py-md-12 py-lg-14" style="background-color: #f5f6f9;">
+    <!-- <div class="py-8 py-sm-10 py-md-12 py-lg-14" style="background-color: #f5f6f9;">
       <v-container>
         <div class="text-h5 text-md-h4 font-weight-bold text-center  mb-4 mb-sm-5 mb-md-6 mb-lg-7" style="line-height: 1.2;">Current Trainings</div>
         <TeamCard class="teams" />
@@ -19,7 +19,7 @@
           <v-btn width="150" color="primary" outlined>view all</v-btn>
         </div>
       </v-container>
-    </div>
+    </div> -->
 
     <div class="py-8 py-sm-10 py-md-12 py-lg-14 white">
       <v-container class="about__section">
