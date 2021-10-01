@@ -2,8 +2,8 @@
   <v-app-bar app color="white" :height="height" elevate-on-scroll>
     <v-container class="d-flex align-center align-lg-end justify-space-between py-0" style="height: 100%;">
       <div style="height: 62px;" @click="goto">
-        <img class="d-none d-md-block" src="../assets/logo_text.png" alt="Trids Validation">
-        <img class="d-block d-md-none" src="../assets/logo.png" alt="Trids Validation">
+        <img src="../assets/logo_text.png" alt="Trids Validation">
+        <!-- <img class="d-block d-md-none" src="../assets/logo.png" alt="Trids Validation"> -->
       </div>
       <v-spacer />
       <div class="d-none d-sm-none d-md-none d-lg-flex flex-column align-end">
@@ -54,9 +54,9 @@ export default {
     ...mapState(['drawer']),
     height () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return 70
-        case 'sm': return 70
-        case 'md': return 70
+        case 'xs': return 62
+        case 'sm': return 62
+        case 'md': return 62
         case 'lg': return 100
         default: return 100
       }
