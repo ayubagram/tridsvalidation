@@ -2,8 +2,8 @@
   <div class="career">
     <div class="banner mb-4 mb-sm-6 mb-md-8 mb-lg-10" data-aos="zoom-in">  
       <div class="banner__info pa-3 text-center">
-        <div class="text-h4 text-sm-h3 text-md-h2 text-lg-h1">Career</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ab.</div>  
+        <div class="text-h4 text-md-h3 text-lg-h2 mb-1">Career</div>
+        <div style="letter-spacing: .5px; font-weight: 300;">Working at TriDS means dealing with the top technologies in one of the most appealing fields in todays challenging industry environment. <br> At TriDs you will enjoy a dynamic, diverse and innovative work environment, with great team spirit. These are our current vacant positions:</div>  
       </div>  
       <img src="https://wallpaperaccess.com/full/2675398.jpg" alt="Career Image">
     </div>  
