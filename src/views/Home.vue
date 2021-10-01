@@ -57,10 +57,10 @@
 
 
 <script>
-import TeamCard from '../components/TeamCard'
+// import TeamCard from '../components/TeamCard'
 import ReviewCard from '../components/ReviewCard.vue'
 export default {
-  components: { TeamCard, ReviewCard },
+  components: { ReviewCard },
   data: () => ({
     slides: [
       { img: require('../assets/welcome.jpg'), title: 'Welcome to TriDS Validation', moto: 'Empowering organizations to succeed' },
