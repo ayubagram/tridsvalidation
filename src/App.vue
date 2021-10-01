@@ -26,7 +26,7 @@ export default {
 
 <style>
 /* Scroll Bar */
-::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar { width: 0px; }
 ::-webkit-scrollbar-track {
   background-color: #e4e4e4;
   border-radius: 100px;
@@ -35,6 +35,7 @@ export default {
   background-color: #00063a;
   border-radius: 100px;
 }
+.v-toolbar__content, .v-toolbar__extension { padding: 0 !important; }
 /* Container */
 .container {
   max-width: 1250px !important;
@@ -57,7 +58,7 @@ p {
 .v-btn {
   text-transform: capitalize !important;
   font-weight: 400 !important;
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 /* Input Fields */
 .v-text-field fieldset, .v-text-field .v-input__control, .v-text-field .v-input__slot { border-radius: 0 !important; }
@@ -79,6 +80,34 @@ p {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 input[type=number] { -moz-appearance: textfield; }
+
+/* Banner */
+.banner { position: relative; }
+.banner img {
+  max-height: calc( 100vh - 70px);
+  min-height: 40vh;
+}
+.banner__info {
+  position: absolute; 
+  height: 100%;
+  width: 100%;
+  background-color: rgb( 0 0 0 / 25%); 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text__banner {
+  background-color: rgb(128 128 128 / 20%);
+  height: 40vh;  
+}
+/* Sub Paragraph */
+.sub__para {
+  font-size: 14px;
+  letter-spacing: .5px; 
+  text-align: justify;
+}
 
 /* Courses */
 .courses, .reviews {

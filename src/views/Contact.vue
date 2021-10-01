@@ -1,14 +1,14 @@
 <template>
   <div>
     <v-container class="contact mb-6">
-      <div class="contact__info">
+      <div class="contact__info" data-aos="fade-right">
         <div class="mb-3">
           <div class="headline mb-2">Contact Us</div>
           <p>Contact us via any medium. We'll get back to you as soon as possible.</p>
         </div> 
         <div class="contacts d-flex flex-column" style="grid-gap: 20px;">
           <div v-for="(inf, i) in info" :key="i" class="d-flex align-center">
-            <div class="contact__circle secondary">
+            <div class="contact__circle primary">
               <v-icon color="white">{{ inf.icon }}</v-icon>
             </div>
             <div style="line-height: 1;" class="ml-3">
@@ -23,10 +23,10 @@
           </v-btn>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-left">
         <div class="headline mb-2">Send Us Message</div>  
         <p>We'll get back to you as soon as possible.</p>
-        <v-form ref="form" lazy-validation v-model="valid" class="d-flex flex-column" style="grid-gap: 12px;">
+        <v-form ref="form" lazy-validation v-model="valid" class="d-flex flex-column mt-3" style="grid-gap: 12px;">
           <div class="d-flex flex-wrap" style="grid-gap: 12px;">
             <v-text-field v-model="form.name" label="Full Name*" dense outlined hide-details prepend-inner-icon="mdi-account" :rules="[ v => !!v || '' ]" />
             <v-text-field v-model="form.address" label="Address*" dense outlined hide-details prepend-inner-icon="mdi-map-marker" :rules="[ v => !!v || '' ]" />
@@ -35,7 +35,7 @@
             <v-text-field v-model="form.subject" label="Subject*" dense outlined hide-details prepend-inner-icon="mdi-text-long" :rules="[ v => !!v || '' ]" />
           </div>
           <v-textarea v-model="form.message" label="Message" dense outlined hide-details prepend-inner-icon="mdi-message" />    
-          <v-btn rounded max-width="200" color="secondary" :disabled="!valid" @click="submit">send message</v-btn>
+          <v-btn rounded max-width="200" color="primary" large :disabled="!valid" @click="submit">send message</v-btn>
         </v-form>  
       </div>
     </v-container> 

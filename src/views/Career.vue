@@ -1,7 +1,7 @@
 <template>
   <div class="career">
-    <div class="career__banner mb-4 mb-sm-6 mb-md-8 mb-lg-10" data-aos="zoom-in">  
-      <div class="career__banner__info pa-3 text-center">
+    <div class="banner mb-4 mb-sm-6 mb-md-8 mb-lg-10" data-aos="zoom-in">  
+      <div class="banner__info pa-3 text-center">
         <div class="text-h4 text-sm-h3 text-md-h2 text-lg-h1">Career</div>
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ab.</div>  
       </div>  
@@ -19,7 +19,7 @@
         </div>  
       </div>
     </v-container>
-    <div class="display-1 text-center px-3 mt-4 mt-sm-6 mt-md-8 mt-lg-10 mb-3" data-aos="zoom-in">Life At TridsValidation</div>
+    <div class="display-1 text-center px-3 mt-4 mt-sm-6 mt-md-8 mt-lg-10 mb-3" data-aos="zoom-in">Life At TriDS Validation</div>
     <div class="life__at">
       <div v-for="(img, i) in images" :key="i" class="life__at__img" data-aos="zoom-in">
         <img :src="img">
@@ -56,22 +56,6 @@ export default {
 </script>
 
 <style>
-.career__banner { position: relative; }
-.career__banner img {
-  max-height: calc( 100vh - 70px);
-  min-height: 40vh;
-}
-.career__banner__info {
-  position: absolute; 
-  height: 100%;
-  width: 100%;
-  background-color: rgb( 0 0 0 / 25%); 
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .job {
   box-shadow: 0 0 20px 0 #0e1f5813;
   border-radius: 4px;

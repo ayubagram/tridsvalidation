@@ -2,7 +2,7 @@
   <v-footer color="white" class="py-6 py-sm-8 py-md-10 py-lg-12" elevation="6" padless>
     <v-container class="footer">
       <div class="company">
-        <div style="width: 200px; box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%); border-radius: 4px; overflow: hidden;">
+        <div style="width: 200px;">
           <img src="../assets/logo_text.png" alt="TridsValidation">
         </div>   
         <div class="mt-3 mb-4 para">Empowering organizations to succeed</div>
@@ -19,28 +19,42 @@
           <div class="para" v-for="(inf, i) in info" :key="i">{{ inf }}</div>
         </div>
         <div class="links">
+          <div class="link__title">Services</div>
+          <div class="para" v-for="(service, s) in services" :key="s">{{ service.title }}</div>
+        </div>
+        <div class="links">
           <div class="link__title">Links</div>
           <div class="para" v-for="(link, l) in links" :key="l">{{ link }}</div>
         </div>
         <div class="links">
-          <div class="link__title">Services</div>
-          <div class="para" v-for="(service, s) in services" :key="s">{{ service }}</div>
-        </div>
-        <div class="links">
-          <div class="link__title">Contact</div>
+          <div class="link__title">Contact Us</div>
           <div class="para" v-for="(con, c) in contact" :key="c">{{ con }}</div>
         </div>  
       </div>
     </v-container>  
+    <v-container>
+      <v-divider />
+      <div class="text-center mt-4">©{{ new Date().getFullYear() }} By triDS Validation</div>
+    </v-container>
   </v-footer>
 </template>
 
 <script>
 export default {
   data: () => ({
-    info: ['Home', 'About', 'Courses', 'Blog'],
-    links: ['Student', 'Business', 'Instructor'],
-    services: ['Design', 'Study', 'Business', 'UI/UX'],
+    info: ['Home', 'About', 'Clients', 'Career'],
+    links: ['Student', 'Instructor'],
+    services: [
+      { title: 'Computer System Validation (CSV)' },
+      { title: 'Equipment Validation' },
+      { title: 'Process Validation' },
+      { title: 'Test Method Validation' },
+      { title: 'Cleaning Validation' },
+      { title: 'Project Management' },
+      { title: 'Staffing Services' },
+      { title: 'Training Services (TriDS Academy)' },
+      { title: 'Commissioning Qualification Validation (CQV)' }
+    ],
     contact: [
       'TriDS Validation- California Office, 5132 Dartmoor Circle, Fairfield, CA 94534', 
       'suhasini@tridsvalidation.com', 
